@@ -8,4 +8,7 @@ header {
   width: 100%;
   height: 50px;
   background: blue;
+}
+header h1 {
+  color: white;
 }/*# sourceMappingURL=custom.css.map */
