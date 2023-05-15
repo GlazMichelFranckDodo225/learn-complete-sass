@@ -1,6 +1,11 @@
+@mixin mainColors($fontSize) {
+    background-color: black;
+    color: white;
+    font-size: $fontSize;
+}
+
 // Variables
 $headerBgColor: green;
-$mainBgColor: aqua;
 $headerBgColorHover: rgb(218, 218, 16);
 $mainBgColorHover: rgb(109, 90, 90);
 
@@ -13,7 +18,9 @@ $mainBgColorHover: rgb(109, 90, 90);
 header {
     width: 100%;
     height: 50px;
-    background: $headerBgColor;
+    // background: $headerBgColor;
+    // color: $mainTextColor;
+    @include mainColors(18px);
     padding: 10px;
 
     h1 {
@@ -33,8 +40,10 @@ header {
 main {
     width: 600px + 300px;
     margin: auto;
-    font-size: 10px + 16px;
-    background-color: $mainBgColor;
+    font-size: 16px;
+    // background-color: $mainBgColor;
+    // color: $mainTextColor;
+    @include mainColors(20px);
 
     p {
         padding: 2px + 16px;
