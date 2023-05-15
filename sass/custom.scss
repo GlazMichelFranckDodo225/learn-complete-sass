@@ -5,9 +5,8 @@
 }
 
 // Variables
-$headerBgColor: green;
-$headerBgColorHover: rgb(218, 218, 16);
-$mainBgColorHover: rgb(109, 90, 90);
+// @import "./_variables.sass";
+@use "variables";
 
 * {
     padding: 0;
